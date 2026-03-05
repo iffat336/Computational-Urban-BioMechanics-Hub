@@ -1,25 +1,41 @@
-# 🏗️ Computational Urban BioMechanics Hub
+# 🏗️ Computational Urban BioMechanics Hub: Pakistan Edition
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
 ![Status](https://img.shields.io/badge/Research-Specialized-blue)
+![Region](https://img.shields.io/badge/Region-Pakistan-green)
 
-A specialized **Multiscale Digital Twin** designed to demonstrate the application of **Computational Mechanics** to urban structural health monitoring.
-
-## 🔬 Scientific Scope
-This repository focuses on two primary research areas:
-1.  **Multiscale Homogenization**: Mapping micro-scale material properties (density, voids, anisotropy) to macro-scale urban stability.
-2.  **Inverse Analysis**: Using AI-driven surrogate models to predict unobservable structural parameters from environmental sensor data.
-
-## 🚀 Key Features
-- **Real-time ANN Surrogate Solver**: Sub-1ms latency for complex mechanical simulations.
-- **3D Stress Landscapes**: Interactive visualization of homogenized material response.
-- **Inverse Parameter Estimation**: Simulated convergence for structural health diagnostics.
-
-## 🛠️ Installation
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
+A specialized **Multiscale Digital Twin** designed to assist urban planners in Pakistan while demonstrating advanced **Computational Mechanics** for structural health monitoring.
 
 ---
-*Developed by **Iffat Nazir** for the PhD Interview at Poznań University of Life Sciences.*
+
+## 🔬 Scientific & Professional Scope
+This platform serves as a dual-purpose tool:
+1.  **For Urban Planners**: Analyzing climate data (temperature, precipitation, humidity) and topographical features (elevation/slope) to generate sustainability recommendations for Pakistani sectors.
+2.  **For Researchers**: Bridging environmental stressors with the research of **Prof. Garbowski** and **Prof. Szymczak-Graczyk** through:
+    - **Multiscale Homogenization**: Mapping soil and terrain conditions to macro-scale stability.
+    - **Inverse Analysis**: Utilizing environmental inputs as observables to predict internal structural stresses via ANN Surrogate models.
+
+## 🚀 Key Features
+- **Climate Trend Visualization**: Real-time analysis of regional Pakistan climate parameters.
+- **3D Topographical Mapping**: Visualizing elevation and slope for sector-level planning.
+- **Future Projections**: Climate change modeling through 2050 to inform long-term infrastructure stability.
+- **Surrogate Solver**: High-speed (<1ms) mechanical prediction engines.
+
+## 🛠️ Installation & Usage
+1. **Clone & Install**:
+   ```bash
+   git clone https://github.com/iffat336/Computational-Urban-BioMechanics-Hub.git
+   cd Computational-Urban-BioMechanics-Hub
+   pip install -r requirements.txt
+   ```
+2. **Execute**:
+   ```bash
+   streamlit run app.py
+   ```
+3. **App Instructions**:
+   - Use the **Sidebar** to select Pakistan regional data and date ranges.
+   - Select your **Area of Interest** on the interactive map modules.
+   - Click **'Analyze Selected Area'** to generate the combined Climate-Mechanical report.
+
+---
+*Developed by **Iffat Nazir** | Bridging Urban Planning and Computational Mechanics at Poznań University of Life Sciences.*
