@@ -1,5 +1,5 @@
 """
-Computational Urban Mechanics Hub: Pakistan Sustainability Edition
+Computational Urban Mechanics Hub: Poland Sustainability Edition
 Specialized for Urban Planners & Structural Researchers
 """
 import streamlit as st
@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 from datetime import datetime
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="Urban Mechanics Hub - Pakistan", page_icon="🏙️", layout="wide")
+st.set_page_config(page_title="Urban Mechanics Hub - Poland", page_icon="🏙️", layout="wide")
 
 # --- PREMIUM STYLING ---
 st.markdown("""
@@ -37,7 +37,7 @@ with st.container():
     st.subheader("📋 Instructions")
     st.markdown("""
     1.  **Sidebar Configuration**: Use the sidebar to select a date range and choose the climate parameters you want to analyze.
-    2.  **Define Area**: On the map, draw a polygon or rectangle to select your area of interest (e.g., Lahore, Karachi, or Islamabad sectors).
+    2.  **Define Area**: On the map, draw a polygon or rectangle to select your area of interest (e.g., Poznań, Warsaw, or Kraków sectors).
     3.  **Engine Activation**: Click '**Analyze Selected Area**' to fetch and analyze the environmental and mechanical data.
     4.  **Research Insight**: Explore the visualizations and recommendations provided by the app.
     """)
@@ -64,13 +64,13 @@ with st.sidebar:
 # --- MAIN CONTENT AREA ---
 if analyze_btn:
     # --- SIMULATED DATA FETCHING ---
-    with st.spinner("Fetching Pakistan GIS & Climate Data..."):
+    with st.spinner("Fetching Poland GIS & Climate Data..."):
         # Simulated topography and soil data
         grid = 25
         x = np.linspace(0, 10, grid)
         y = np.linspace(0, 10, grid)
         X, Y = np.meshgrid(x, y)
-        elevation = (np.sin(X/2) * np.cos(Y/2) * 50) + 200 # Pakistan terrain simulation
+        elevation = (np.sin(X/2) * np.cos(Y/2) * 50) + 200 # Poland terrain simulation
         slope = np.gradient(elevation)[0]
         
         # Simulated Soil/Land conditions
