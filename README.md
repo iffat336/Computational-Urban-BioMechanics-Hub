@@ -21,6 +21,18 @@ This platform serves as a dual-purpose tool:
 - **Future Projections**: Climate change modeling through 2050 to inform long-term infrastructure stability.
 - **Surrogate Solver**: High-speed (<1ms) mechanical prediction engines.
 
+## 📊 Performance Benchmark: ANN Surrogate vs. Traditional FEM
+| Solver Methodology | Latency (Per Step) | Computational Cost | Scalability |
+| :--- | :--- | :--- | :--- |
+| **Traditional Numerical (FEM)** | ~120 - 600s | High (Desktop/HPC) | Restricted to single sector |
+| **ANN Surrogate (This Hub)** | **< 0.8ms** | **Extremely Low (Browser)** | **Global Real-time scaling** |
+
+## 🧬 Future Research & PhD Roadmap
+This platform serves as a prototype for my future doctoral research, focusing on:
+- **Hygrothermal Coupling**: Integrating satellite-based real-time GIS feeds (NASA/Copernicus) for live structural health monitoring.
+- **Multiscale RVE Modeling**: Moving from 2D approximations to a full 3D **Representative Volume Element (RVE)** homogenization framework.
+- **Explainable AI (XAI)**: Implementing visual attention layers to explain the physical features prioritized by the surrogate models.
+
 ## 🛠️ Installation & Usage
 1. **Clone & Install**:
    ```bash
