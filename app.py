@@ -15,11 +15,14 @@ st.set_page_config(page_title="Urban Mechanics Hub - Pakistan", page_icon="üèôÔ
 # --- PREMIUM STYLING ---
 st.markdown("""
 <style>
-    .main { background-color: #0e1117; }
-    .stMetric { background-color: #1e2130; padding: 15px; border-radius: 10px; border-left: 5px solid #2ecc71; }
-    h1, h2, h3 { color: #2ecc71; font-family: 'Outfit', sans-serif; }
-    .stButton>button { background-color: #2ecc71; color: #0e1117; font-weight: bold; border-radius: 8px; width: 100%; height: 3em; }
-    .instruction-card { background-color: #161b22; padding: 20px; border-radius: 10px; border: 1px solid #30363d; margin-bottom: 25px; }
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+    .main { background-color: #0b0e14; }
+    .stApp { background: radial-gradient(circle at top right, #1a2a22, #0b0e14); }
+    .stMetric { background-color: rgba(22, 27, 34, 0.8); border-radius: 12px; border-left: 5px solid #2ecc71; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+    h1, h2, h3 { font-family: 'Outfit', sans-serif; background: linear-gradient(90deg, #2ecc71, #00d4ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; }
+    .stButton>button { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: #0b0e14; font-weight: 700; border-radius: 8px; border: none; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3); transition: all 0.3s ease; }
+    .stButton>button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4); color: white; }
+    .instruction-card { background-color: #161b22; padding: 25px; border-radius: 12px; border: 1px solid rgba(46, 204, 113, 0.2); margin-bottom: 25px; backdrop-filter: blur(10px); }
 </style>
 """, unsafe_allow_html=True)
 
