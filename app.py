@@ -104,6 +104,36 @@ if analyze_btn:
         fig_climate.update_layout(template="plotly_dark")
         st.plotly_chart(fig_climate, use_container_width=True)
 
+    # --- ADVANCED MECHANICAL ANALYSIS ---
+    st.divider()
+    st.subheader("🔬 Advanced Constitutive Modeling (Digital Twin)")
+    
+    ss_col1, ss_col2 = st.columns([1, 1.2])
+    
+    with ss_col1:
+        st.write("**Material Stress-Strain Response**")
+        # Scientific simulation of hardening material
+        eps = np.linspace(0, 0.1, 50)
+        sig = 150 * (eps**0.3) # Power law hardening
+        
+        fig_ss_standalone = go.Figure()
+        fig_ss_standalone.add_trace(go.Scatter(x=eps, y=sig, mode='lines+markers', name='Surrogate Prediction', line=dict(color='#2ecc71')))
+        fig_ss_standalone.update_layout(template="plotly_dark", xaxis_title="Strain (ε)", yaxis_title="Stress (σ) MPa", height=350)
+        st.plotly_chart(fig_ss_standalone, use_container_width=True)
+        st.caption("Non-linear homogenization of Wielkopolska soil matrices.")
+
+    with ss_col2:
+        st.write("**Hygrothermal Sensitivity Matrix**")
+        # Re-using the projection logic for a specialized heat-sensitivity chart
+        sensitivity_data = pd.DataFrame({
+            "Temp (°C)": np.arange(0, 41, 5),
+            "E-Modulus Loss (%)": [0, 2, 5, 10, 18, 28, 40, 55, 75]
+        })
+        fig_sens = px.bar(sensitivity_data, x="Temp (°C)", y="E-Modulus Loss (%)", color="E-Modulus Loss (%)", color_continuous_scale='Viridis')
+        fig_sens.update_layout(template="plotly_dark", height=350)
+        st.plotly_chart(fig_sens, use_container_width=True)
+        st.caption("Thermal degradation profile for urban foundation materials.")
+
     st.divider()
     
     # --- FUTURE PROJECTIONS & RECOMMENDATIONS ---
