@@ -16,8 +16,8 @@ This platform serves as a dual-purpose tool:
     - **Inverse Analysis**: Utilizing environmental inputs as observables to predict internal structural stresses via ANN Surrogate models in Central European climates.
 
 ## 🚀 Key Features
-- **Climate Trend Visualization**: Real-time analysis of regional Pakistan climate parameters.
-- **3D Topographical Mapping**: Visualizing elevation and slope for sector-level planning.
+- **Regional Climate Profiling**: Real-time analysis of European/Polish climate parameters (Wielkopolska).
+- **3D Topographical Mapping**: Visualizing elevation and slope for structural foundation assessment.
 - **Future Projections**: Climate change modeling through 2050 to inform long-term infrastructure stability.
 - **Surrogate Solver**: High-speed (<1ms) mechanical prediction engines.
 
@@ -33,7 +33,7 @@ This platform serves as a dual-purpose tool:
    streamlit run app.py
    ```
 3. **App Instructions**:
-   - Use the **Sidebar** to select Pakistan regional data and date ranges.
+   - Use the **Sidebar** to select Polish regional data (Poznań profile) and date ranges.
    - Select your **Area of Interest** on the interactive map modules.
    - Click **'Analyze Selected Area'** to generate the combined Climate-Mechanical report.
 
