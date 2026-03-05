@@ -1,19 +1,19 @@
-# 🏗️ Computational Urban BioMechanics Hub: Pakistan Edition
+# 🏗️ Computational Urban BioMechanics Hub: Poland Edition
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
 ![Status](https://img.shields.io/badge/Research-Specialized-blue)
-![Region](https://img.shields.io/badge/Region-Pakistan-green)
+![Region](https://img.shields.io/badge/Region-Poland-red)
 
-A specialized **Multiscale Digital Twin** designed to assist urban planners in Pakistan while demonstrating advanced **Computational Mechanics** for structural health monitoring.
+A specialized **Multiscale Digital Twin** designed to assist urban planners in Poland while demonstrating advanced **Computational Mechanics** for structural health monitoring.
 
 ---
 
 ## 🔬 Scientific & Professional Scope
 This platform serves as a dual-purpose tool:
-1.  **For Urban Planners**: Analyzing climate data (temperature, precipitation, humidity) and topographical features (elevation/slope) to generate sustainability recommendations for Pakistani sectors.
+1.  **For Urban Planners**: Analyzing climate patterns (temperature, precipitation, humidity) and topographical features (elevation/slope) to generate sustainability recommendations for European urban sectors.
 2.  **For Researchers**: Bridging environmental stressors with the research of **Prof. Garbowski** and **Prof. Szymczak-Graczyk** through:
-    - **Multiscale Homogenization**: Mapping soil and terrain conditions to macro-scale stability.
-    - **Inverse Analysis**: Utilizing environmental inputs as observables to predict internal structural stresses via ANN Surrogate models.
+    - **Multiscale Homogenization**: Mapping soil and terrain conditions in the Greater Poland (Wielkopolska) region to macro-scale stability.
+    - **Inverse Analysis**: Utilizing environmental inputs as observables to predict internal structural stresses via ANN Surrogate models in Central European climates.
 
 ## 🚀 Key Features
 - **Climate Trend Visualization**: Real-time analysis of regional Pakistan climate parameters.

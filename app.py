@@ -27,9 +27,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- HEADER & INTRODUCTION ---
-st.title("🇵🇰 Computational Urban BioMechanics Hub")
+st.title("🇵🇱 Computational Urban BioMechanics Hub: Poland Edition")
 st.markdown("""
-**This application is designed to assist urban planners in analyzing climate data, topography, and providing urban planning recommendations for specific areas within Pakistan.**
+**This application is designed to assist urban researchers in analyzing climate patterns, topography, and structural planning for European urban contexts, with a focus on Greater Poland (Wielkopolska).**
 """)
 
 with st.container():
@@ -45,10 +45,10 @@ with st.container():
 
 # --- SIDEBAR: CONTROLS ---
 with st.sidebar:
-    st.image("https://img.icons8.com/fluency/96/000000/pakistan.png", width=80)
-    st.header("Settings & Parameters")
+    st.image("https://img.icons8.com/fluency/96/000000/poland.png", width=80)
+    st.header("Regional Parameters")
     
-    date_range = st.date_input("Select Date Range", [datetime(2023, 1, 1), datetime(2024, 12, 31)])
+    date_range = st.date_input("Analysis Period", [datetime(2023, 1, 1), datetime(2024, 12, 31)])
     
     st.subheader("Climate Parameters")
     params = st.multiselect("Choose Parameters", 
@@ -93,14 +93,14 @@ if analyze_btn:
         st.info("**Land Observation:** High clay content detected in lower sectors. Soil homogenization factor: 0.82.")
 
     with col2:
-        st.subheader("🌡️ Climate Parameter Trends")
+        st.subheader("🌡️ Climate Parameter Trends (Poznań Region)")
         chart_data = pd.DataFrame({
             "Month": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-            "Temp (°C)": [12, 15, 22, 28, 35, 38, 36, 34, 32, 27, 20, 14],
-            "Rainfall (mm)": [20, 30, 40, 20, 10, 50, 120, 110, 60, 10, 5, 10]
+            "Temp (°C)": [-1, 1, 5, 10, 15, 18, 20, 19, 14, 9, 4, 1],
+            "Rainfall (mm)": [35, 30, 40, 35, 50, 60, 75, 65, 45, 40, 40, 40]
         })
         fig_climate = px.line(chart_data, x="Month", y="Temp (°C)", markers=True, 
-                             title="Climate Trend for Selected Pakistani Region")
+                             title="Hygrothermal Profile: Poznań, Poland")
         fig_climate.update_layout(template="plotly_dark")
         st.plotly_chart(fig_climate, use_container_width=True)
 
@@ -120,8 +120,8 @@ if analyze_btn:
         st.success("**Urban Greening**: Implement high-density green corridors to reduce runoff by 15%.")
         
     with rec_col3:
-        st.metric("Groundwater Level", "-2.4m", delta="Declining", delta_color="inverse")
-        st.error("**Water Mgmt**: Mandate permeable paving for Karachi/Lahore monsoon management.")
+        st.metric("Groundwater Level", "-0.8m", delta="Stable")
+        st.error("**Water Mgmt**: Mandate flood-resilient infrastructure for Poznań basin floodplains.")
 
     # --- RESEARCH CONNECTION (THE PITCH) ---
     st.divider()
@@ -130,8 +130,8 @@ if analyze_btn:
     **How this project relates to the research of Prof. Garbowski & Prof. Szymczak-Graczyk:**
     
     *   **Inverse Analysis**: This app uses external environmental variables (Climate/Topography) as inputs to an **Inverse Analysis Loop**, predicting the unobservable internal stress of urban foundations.
-    *   **Homogenization**: By analyzing Pakistan's diverse soil conditions, the project demonstrates **Material Homogenization**—treating complex urban land as a unified, hierarchical structure for better mechanical prediction.
-    *   **Digital Twins**: This is a direct application of the **Hygrothermal Digital Twin** methodology, where moisture (Precipitation) and temperature directly affect the structural longevity of infrastructure.
+    *   **Homogenization**: By analyzing Poland's glaciated soil conditions, the project demonstrates **Material Homogenization**—treating complex urban land as a unified, hierarchical structure for better mechanical prediction.
+    *   **Digital Twins**: This is a direct application of the **Hygrothermal Digital Twin** methodology, where moisture (Precipitation) and temperature directly affect the structural longevity of Central European infrastructure.
     
     *Technical Validation: The 3D Terrain model uses a trained **ANN Surrogate** to map soil-moisture conductivity to foundation stability scores in <1ms.*
     """)
